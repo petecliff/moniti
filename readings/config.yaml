@@ -1,0 +1,15 @@
+region: eu-west-1
+
+function_name: moniti_send_readings
+handler: send_readings.handler
+description: Sends readings from enviroplus
+runtime: python3.7
+role: greengrass-lambda-basic-execution
+
+#tags:
+#    tag_1: foo
+#    tag_2: bar
+
+# Build options
+build:
+  source_directories: lib # a comma delimited list of directories in your project root that contains source to package.
