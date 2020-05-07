@@ -1,0 +1,17 @@
+region: eu-west-1
+
+function_name: moniti_luftdaten_sender
+handler: luftdaten.handler
+description: Sends data to luftdaten - based on Pimoroni script
+runtime: python3.7
+role: lambda-basic-execution
+
+environment_variables:
+  LUFTDATEN_ID: fill_me_in
+
+# If `tags` is uncommented then tags will be set at creation or update
+# time.  During an update all other tags will be removed except the tags
+# listed here.
+tags:
+    project: moniti
+    execution_env: aws_cloud
